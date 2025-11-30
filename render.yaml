@@ -1,0 +1,30 @@
+# Render Backend Deployment Configuration
+# This file tells Render how to build and run the backend
+
+# Build Command
+# npm install
+
+# Start Command  
+# node src/server.js
+
+services:
+  - type: web
+    name: skillswap-api
+    env: node
+    region: oregon
+    plan: free
+    branch: main
+    rootDir: server
+    buildCommand: npm install
+    startCommand: node src/server.js
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: MONGODB_URI
+        sync: false
+      - key: JWT_SECRET
+        generateValue: true
+      - key: JWT_REFRESH_SECRET
+        generateValue: true
+      - key: CLIENT_URL
+        sync: false

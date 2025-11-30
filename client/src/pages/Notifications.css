@@ -1,0 +1,249 @@
+/* Notifications Page */
+.notifications-page {
+  padding: 32px 0 60px;
+  min-height: calc(100vh - 72px);
+  background: var(--bg);
+}
+
+.notifications-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.notifications-header h1 {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.unread-count {
+  padding: 4px 12px;
+  border-radius: var(--radius-full);
+  background: var(--primary);
+  color: white;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.mark-all-btn {
+  padding: 10px 18px;
+  border-radius: var(--radius);
+  border: none;
+  background: transparent;
+  color: var(--primary);
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.mark-all-btn:hover {
+  background: var(--primary-bg);
+}
+
+/* Filters */
+.notifications-filters {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 24px;
+  overflow-x: auto;
+  padding-bottom: 4px;
+}
+
+.filter-btn {
+  padding: 10px 20px;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--border);
+  background: var(--card);
+  color: var(--text-secondary);
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: var(--transition);
+}
+
+.filter-btn:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.filter-btn.active {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: white;
+}
+
+/* Notifications List */
+.notifications-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.notifications-loading {
+  display: flex;
+  justify-content: center;
+  padding: 60px;
+}
+
+/* Notification Item */
+.notification-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 20px 24px;
+  background: var(--card);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  cursor: pointer;
+  transition: var(--transition);
+  position: relative;
+}
+
+.notification-item:hover {
+  border-color: var(--primary-light);
+  box-shadow: var(--shadow);
+}
+
+.notification-item.unread {
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.03), rgba(16, 185, 129, 0.03));
+  border-color: var(--primary-light);
+}
+
+.notification-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.notification-icon svg {
+  width: 22px;
+  height: 22px;
+}
+
+.notification-icon.deal_proposal {
+  background: var(--primary-bg);
+  color: var(--primary);
+}
+
+.notification-icon.deal_accepted {
+  background: rgba(16, 185, 129, 0.1);
+  color: var(--success);
+}
+
+.notification-icon.message {
+  background: rgba(59, 130, 246, 0.1);
+  color: #3b82f6;
+}
+
+.notification-icon.review {
+  background: rgba(245, 158, 11, 0.1);
+  color: var(--warning);
+}
+
+.notification-icon.skillcoin {
+  background: rgba(168, 85, 247, 0.1);
+  color: #a855f7;
+}
+
+.notification-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.notification-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 6px;
+}
+
+.notification-header h4 {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.notification-time {
+  font-size: 13px;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
+.notification-content p {
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.unread-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--primary);
+  flex-shrink: 0;
+  margin-top: 6px;
+}
+
+/* Empty State */
+.no-notifications {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.no-notif-icon {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 20px;
+  border-radius: var(--radius-full);
+  background: var(--card);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-muted);
+}
+
+.no-notif-icon svg {
+  width: 36px;
+  height: 36px;
+}
+
+.no-notifications h3 {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.no-notifications p {
+  color: var(--text-muted);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .notifications-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .notification-item {
+    padding: 16px;
+  }
+
+  .notification-header {
+    flex-direction: column;
+    gap: 4px;
+  }
+}

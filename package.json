@@ -1,0 +1,27 @@
+{
+  "name": "skillswap",
+  "version": "1.0.0",
+  "description": "SkillSwap - Trade Skills Without Money. A barter-only skill marketplace.",
+  "private": true,
+  "scripts": {
+    "install:all": "npm install && cd server && npm install && cd ../client && npm install",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && npm run dev",
+    "client": "cd client && npm run dev",
+    "build": "cd client && npm run build",
+    "start": "cd server && npm start",
+    "test": "cd server && npm test && cd ../client && npm test"
+  },
+  "keywords": [
+    "skillswap",
+    "barter",
+    "skills",
+    "marketplace",
+    "mern"
+  ],
+  "author": "ZenYukti",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
