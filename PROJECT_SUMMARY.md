@@ -1,9 +1,10 @@
 # SkillSwap - Project Summary
 
 <div align="center">
-  <img src="https://img.shields.io/badge/Status-In%20Development-yellow" alt="Status" />
+  <img src="https://img.shields.io/badge/Status-Live-success" alt="Status" />
   <img src="https://img.shields.io/badge/Version-1.0.0-blue" alt="Version" />
   <img src="https://img.shields.io/badge/License-MIT-green" alt="License" />
+  <img src="https://img.shields.io/badge/Built%20by-Team%20ZenYukti-blueviolet" alt="Team" />
 </div>
 
 ## 🎯 Problem Statement
@@ -87,14 +88,23 @@ While platforms exist for paid tutoring and courses, there's a significant gap f
 
 ### Tech Stack (MERN)
 
-| Layer | Technology | Purpose |
-|-------|------------|---------|
-| **Frontend** | React.js + Vite | Fast, modern UI with hot reload |
-| **Styling** | Custom CSS + Framer Motion | Modern animations and responsive design |
-| **Backend** | Node.js + Express.js | RESTful API server |
-| **Database** | MongoDB + Mongoose | Flexible document storage |
-| **Auth** | JWT (Access + Refresh tokens) | Secure authentication |
-| **File Upload** | Multer | Profile images and attachments |
+| Category | Technology | Version | Purpose |
+|----------|------------|---------|---------|--|---------||
+| **Frontend** | React.js | 18.x | Component-based UI library |
+| **Build Tool** | Vite | 5.x | Fast dev server & bundler |
+| **Routing** | React Router | 6.x | Client-side navigation |
+| **Animations** | Framer Motion | 10.x | Smooth UI animations |
+| **HTTP Client** | Axios | 1.x | API requests |
+| **Styling** | Custom CSS | - | Modern responsive design |
+| **Runtime** | Node.js | 18.x+ | JavaScript runtime |
+| **Framework** | Express.js | 4.x | REST API server |
+| **Database** | MongoDB | 8.x | NoSQL document database |
+| **ODM** | Mongoose | 8.x | MongoDB object modeling |
+| **Auth** | JWT | - | Access & Refresh tokens |
+| **Security** | bcrypt | - | Password hashing |
+| **File Upload** | Multer | - | Image/file handling |
+| **Headers** | Helmet | - | HTTP security headers |
+| **Rate Limit** | express-rate-limit | - | API abuse prevention |
 
 ### Project Structure
 
@@ -366,18 +376,23 @@ This project is licensed under the MIT License - see the [LICENSE](./LICENSE) fi
 
 ---
 
-## 👥 Team
+## 👥 Team ZenYukti
 
-Built with ❤️ by **ZenYukti**
+Built with ❤️ by **Team ZenYukti**
 
-- Website: [zenyukti.in](https://zenyukti.in)
-- GitHub: [@ZenYukti](https://github.com/ZenYukti)
-- Discord: [Join our community](https://go.zenyukti.in/discord)
+| | |
+|---|---|
+| 🌐 **Website** | [zenyukti.in](https://zenyukti.in) |
+| 💼 **LinkedIn** | [linkedin.com/company/ZenYukti](https://linkedin.com/company/ZenYukti) |
+| 🐦 **Twitter/X** | [x.com/ZenYukti](https://x.com/ZenYukti) |
+| 💬 **Discord** | [Join our community](https://go.zenyukti.in/discord) |
+| 📧 **Email** | [info@zenyukti.in](mailto:info@zenyukti.in) |
+| 🛟 **Support** | [support@zenyukti.in](mailto:support@zenyukti.in) |
 
 ---
 
 <div align="center">
-  <strong>Learn. Teach. Grow Together.</strong>
+  <strong>Learn. Build. Share.</strong>
   <br><br>
-  <em>"To grow together"</em> — ZenYukti
+  <em>"To grow together"</em> — Team ZenYukti 💜
 </div>

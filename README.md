@@ -1,11 +1,18 @@
 # SkillSwap — Trade Skills Without Money
 
 <p align="center">
-  <img src="client/public/logo.svg" alt="SkillSwap Logo" width="120" />
+  <img src="client/assets/skillswap-logo.png" alt="SkillSwap Logo" width="120" />
 </p>
 
 <p align="center">
   <strong>A barter-only skill marketplace where users trade skills without money.</strong>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Status-Live-success" alt="Status" />
+  <img src="https://img.shields.io/badge/Version-1.0.0-blue" alt="Version" />
+  <img src="https://img.shields.io/badge/License-MIT-green" alt="License" />
+  <img src="https://img.shields.io/badge/Built%20by-Team%20ZenYukti-blueviolet" alt="Team" />
 </p>
 
 <p align="center">
@@ -280,12 +287,27 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🙏 Acknowledgments
 
-- Built with ❤️ by [ZenYukti](https://github.com/ZenYukti)
+- Built with ❤️ by [Team ZenYukti](https://zenyukti.in)
 - Inspired by the philosophy of skill sharing and community collaboration
 - "Learn. Build. Share." — To grow together
 
 ---
 
+## 👥 Team ZenYukti
+
+| | |
+|---|---|
+| 🌐 **Website** | [zenyukti.in](https://zenyukti.in) |
+| 💼 **LinkedIn** | [linkedin.com/company/ZenYukti](https://linkedin.com/company/ZenYukti) |
+| 🐦 **Twitter/X** | [x.com/ZenYukti](https://x.com/ZenYukti) |
+| 💬 **Discord** | [Join our community](https://go.zenyukti.in/discord) |
+| 📧 **Email** | [info@zenyukti.in](mailto:info@zenyukti.in) |
+| 🛟 **Support** | [support@zenyukti.in](mailto:support@zenyukti.in) |
+
+---
+
 <p align="center">
   <strong>SkillSwap</strong> — Trade Skills, Not Money
+  <br><br>
+  <em>"Learn. Build. Share."</em> — Team ZenYukti 💜
 </p>
