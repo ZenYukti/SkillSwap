@@ -37,3 +37,7 @@ coverage/
 # Temporary files
 tmp/
 temp/
+
+# Local documentation (not for repo)
+PROJECT_SETUP_GUIDE.md
+DEPLOYMENT.md
