@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import axios from 'axios'
+import api from '../services/api'
 import { useParams, Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import './Profile.css'
@@ -19,11 +19,11 @@ export default function Profile() {
   const fetchUserData = async () => {
     try {
       setLoading(true)
-      const userRes = await axios.get(`/api/users/public/${username}`)
+      const userRes = await api.get(`/users/public/${username}`)
       setUser(userRes.data.data)
       
       // Try to fetch user's skills
-      const skillsRes = await axios.get(`/api/skills?user=${userRes.data.data._id}`).catch(() => ({ data: { data: [] } }))
+      const skillsRes = await api.get(`/skills?user=${userRes.data.data._id}`).catch(() => ({ data: { data: [] } }))
       setSkills(skillsRes.data.data || [])
     } catch (error) {
       console.error('Error fetching user:', error)

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { motion } from 'framer-motion'
-import axios from 'axios'
+import api from '../services/api'
 import './Dashboard.css'
 
 const fadeInUp = {
@@ -53,11 +53,11 @@ export default function Dashboard() {
       const config = { headers: { Authorization: `Bearer ${token}` } }
       
       // Fetch user's skills
-      const skillsRes = await axios.get('/api/skills/my', config).catch(() => ({ data: { data: [] } }))
+      const skillsRes = await api.get('/skills/mine').catch(() => ({ data: { data: [] } }))
       setSkills(skillsRes.data.data?.slice(0, 4) || [])
       
       // Fetch recent deals
-      const dealsRes = await axios.get('/api/deals/my', config).catch(() => ({ data: { data: [] } }))
+      const dealsRes = await api.get('/deals').catch(() => ({ data: { data: [] } }))
       setRecentDeals(dealsRes.data.data?.slice(0, 3) || [])
       
     } catch (error) {

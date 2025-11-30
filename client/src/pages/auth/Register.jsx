@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import axios from 'axios'
+import api from '../../services/api'
 import { useNavigate, Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import './Auth.css'
@@ -21,7 +21,7 @@ export default function Register() {
     setError(null)
 
     try {
-      const res = await axios.post('/api/auth/register', form)
+      const res = await api.post('/auth/register', form)
       localStorage.setItem('accessToken', res.data.data.accessToken)
       localStorage.setItem('user', JSON.stringify(res.data.data.user))
       navigate('/dashboard')

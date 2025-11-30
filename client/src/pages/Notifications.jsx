@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
-import axios from 'axios'
+import api from '../services/api'
 import './Notifications.css'
 
 const notificationIcons = {
@@ -51,10 +51,7 @@ export default function Notifications() {
 
   const fetchNotifications = async () => {
     try {
-      const token = localStorage.getItem('accessToken')
-      const res = await axios.get('/api/notifications', {
-        headers: { Authorization: `Bearer ${token}` }
-      }).catch(() => ({ data: { data: [] } }))
+      const res = await api.get('/notifications').catch(() => ({ data: { data: [] } }))
       
       setNotifications(res.data.data || [
         // Sample data for UI demonstration

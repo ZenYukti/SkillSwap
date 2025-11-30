@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import axios from 'axios'
+import api from '../../services/api'
 import { useNavigate, Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import './Auth.css'
@@ -18,7 +18,7 @@ export default function Login() {
     setError(null)
     
     try {
-      const res = await axios.post('/api/auth/login', { email, password })
+      const res = await api.post('/auth/login', { email, password })
       localStorage.setItem('accessToken', res.data.data.accessToken)
       localStorage.setItem('user', JSON.stringify(res.data.data.user))
       navigate('/dashboard')

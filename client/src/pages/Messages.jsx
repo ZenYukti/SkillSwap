@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
-import axios from 'axios'
+import api from '../services/api'
 import './Messages.css'
 
 export default function Messages() {
@@ -16,10 +16,7 @@ export default function Messages() {
 
   const fetchConversations = async () => {
     try {
-      const token = localStorage.getItem('accessToken')
-      const res = await axios.get('/api/messages/conversations', {
-        headers: { Authorization: `Bearer ${token}` }
-      }).catch(() => ({ data: { data: [] } }))
+      const res = await api.get('/messages/conversations').catch(() => ({ data: { data: [] } }))
       
       setConversations(res.data.data || [
         // Sample data for UI

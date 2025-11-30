@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { useParams, useNavigate, Link } from 'react-router-dom'
-import axios from 'axios'
+import api from '../services/api'
 import { motion } from 'framer-motion'
 import './SkillDetail.css'
 
@@ -28,7 +28,7 @@ export default function SkillDetail() {
   const fetchSkill = async () => {
     try {
       setLoading(true)
-      const res = await axios.get(`/api/skills/${id}`)
+      const res = await api.get(`/skills/${id}`)
       setSkill(res.data.data)
     } catch (err) {
       setError(err.response?.data?.message || 'Skill not found')
@@ -53,11 +53,9 @@ export default function SkillDetail() {
       const token = localStorage.getItem('accessToken')
       
       // First, start a conversation
-      await axios.post('/api/messages/conversations', {
+      await api.post('/messages/conversations', {
         recipientId: skill.user._id,
         message: `Hi! I'm interested in your skill: "${skill.title}"\n\n${proposalMessage}`
-      }, {
-        headers: { Authorization: `Bearer ${token}` }
       })
 
       setShowProposalModal(false)

@@ -1,15 +1,13 @@
 import React, { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { motion } from 'framer-motion'
-import axios from 'axios'
+import api from '../services/api'
 import './Settings.css'
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 20 },
   visible: { opacity: 1, y: 0 }
 }
-
-const API = import.meta.env.VITE_API_URL || 'http://localhost:5000/api'
 
 export default function Settings() {
   const navigate = useNavigate()
@@ -66,10 +64,7 @@ export default function Settings() {
 
   const fetchUserData = async () => {
     try {
-      const token = localStorage.getItem('accessToken')
-      const res = await axios.get(`${API}/users/me`, {
-        headers: { Authorization: `Bearer ${token}` }
-      })
+      const res = await api.get('/users/me')
       const user = res.data.user
       setProfile({
         name: user.name || '',
@@ -93,14 +88,11 @@ export default function Settings() {
     setMessage({ type: '', text: '' })
 
     try {
-      const token = localStorage.getItem('accessToken')
-      await axios.put(`${API}/users/me`, {
+      await api.put('/users/me', {
         name: profile.name,
         bio: profile.bio,
         location: profile.location,
         website: profile.website
-      }, {
-        headers: { Authorization: `Bearer ${token}` }
       })
       
       // Update local storage
@@ -133,12 +125,9 @@ export default function Settings() {
     setMessage({ type: '', text: '' })
 
     try {
-      const token = localStorage.getItem('accessToken')
-      await axios.put(`${API}/users/me/password`, {
+      await api.put('/users/me/password', {
         currentPassword: passwords.currentPassword,
         newPassword: passwords.newPassword
-      }, {
-        headers: { Authorization: `Bearer ${token}` }
       })
       
       setPasswords({ currentPassword: '', newPassword: '', confirmPassword: '' })
@@ -155,10 +144,7 @@ export default function Settings() {
     setMessage({ type: '', text: '' })
 
     try {
-      const token = localStorage.getItem('accessToken')
-      await axios.put(`${API}/users/me/notifications`, notifications, {
-        headers: { Authorization: `Bearer ${token}` }
-      })
+      await api.put('/users/me/notifications', notifications)
       setMessage({ type: 'success', text: 'Notification preferences saved!' })
     } catch (error) {
       setMessage({ type: 'error', text: 'Failed to save notification preferences' })
@@ -172,10 +158,7 @@ export default function Settings() {
     setMessage({ type: '', text: '' })
 
     try {
-      const token = localStorage.getItem('accessToken')
-      await axios.put(`${API}/users/me/privacy`, privacy, {
-        headers: { Authorization: `Bearer ${token}` }
-      })
+      await api.put('/users/me/privacy', privacy)
       setMessage({ type: 'success', text: 'Privacy settings saved!' })
     } catch (error) {
       setMessage({ type: 'error', text: 'Failed to save privacy settings' })

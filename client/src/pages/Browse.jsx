@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
-import axios from 'axios'
+import api from '../services/api'
 import { motion, AnimatePresence } from 'framer-motion'
 import './Browse.css'
 
@@ -72,7 +72,7 @@ export default function Browse() {
   const fetchSkills = async () => {
     try {
       setLoading(true)
-      const res = await axios.get('/api/skills')
+      const res = await api.get('/skills')
       setSkills(res.data.data || [])
     } catch (error) {
       console.error('Error fetching skills:', error)
