@@ -26,7 +26,7 @@
 
 ---
 
-## 🌟 Overview
+## Overview
 
 SkillSwap is a modern web application that enables users to exchange skills and services through a barter system. Instead of using money, users trade their expertise directly with others or use an internal credit system called **SkillCoins**.
 
@@ -40,22 +40,22 @@ SkillSwap is a modern web application that enables users to exchange skills and 
 
 ---
 
-## ✨ Features
+## Features
 
 ### For Users
-- 📝 **Skill Offers & Requests** - List skills you offer and want
-- 🤝 **Barter Deals** - Propose and negotiate skill trades
-- 💰 **SkillCoins** - Internal credit system for flexibility
-- ⭐ **Trust Score** - Reputation based on ratings and history
-- 💬 **Messaging** - In-app chat for deal discussions
-- 🔔 **Notifications** - Stay updated on proposals and messages
-- 👤 **User Profiles** - Showcase your skills and reviews
+- **Skill Offers & Requests** - List skills you offer and want
+- **Barter Deals** - Propose and negotiate skill trades
+- **SkillCoins** - Internal credit system for flexibility
+- **Trust Score** - Reputation based on ratings and history
+- **Messaging** - In-app chat for deal discussions
+- **Notifications** - Stay updated on proposals and messages
+- **User Profiles** - Showcase your skills and reviews
 
 ### For Admins
-- 👥 **User Management** - View and moderate users
-- 📊 **Dashboard** - Overview of platform activity
-- ⚖️ **Dispute Resolution** - Handle reported issues
-- 🛡️ **Content Moderation** - Remove inappropriate content
+- **User Management** - View and moderate users
+- **Dashboard** - Overview of platform activity
+- **Dispute Resolution** - Handle reported issues
+- **Content Moderation** - Remove inappropriate content
 
 ---
 
@@ -79,7 +79,7 @@ SkillSwap is a modern web application that enables users to exchange skills and 
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -149,7 +149,7 @@ Default admin credentials:
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 SkillSwap/
@@ -240,7 +240,7 @@ http://localhost:5000/api
 
 ---
 
-## 🧪 Testing
+## Testing
 
 ```bash
 # Run all tests
@@ -255,7 +255,7 @@ cd client && npm test
 
 ---
 
-## 🎨 Design Philosophy
+## Design Philosophy
 
 SkillSwap follows a modern, clean design approach:
 
@@ -267,7 +267,7 @@ SkillSwap follows a modern, clean design approach:
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) for details.
 
@@ -279,13 +279,13 @@ We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) f
 
 ---
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - Built with ❤️ by [Team ZenYukti](https://zenyukti.in)
 - Inspired by the philosophy of skill sharing and community collaboration
@@ -293,16 +293,16 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-## 👥 Team ZenYukti
+## Team ZenYukti
 
 | | |
 |---|---|
-| 🌐 **Website** | [zenyukti.in](https://zenyukti.in) |
-| 💼 **LinkedIn** | [linkedin.com/company/ZenYukti](https://linkedin.com/company/ZenYukti) |
-| 🐦 **Twitter/X** | [x.com/ZenYukti](https://x.com/ZenYukti) |
-| 💬 **Discord** | [Join our community](https://go.zenyukti.in/discord) |
-| 📧 **Email** | [info@zenyukti.in](mailto:info@zenyukti.in) |
-| 🛟 **Support** | [support@zenyukti.in](mailto:support@zenyukti.in) |
+| **Website** | [zenyukti.in](https://zenyukti.in) |
+| **LinkedIn** | [linkedin.com/company/ZenYukti](https://linkedin.com/company/ZenYukti) |
+| **Twitter/X** | [x.com/ZenYukti](https://x.com/ZenYukti) |
+| **Discord** | [Join our community](https://go.zenyukti.in/discord) |
+| **Email** | [info@zenyukti.in](mailto:info@zenyukti.in) |
+| **Support** | [support@zenyukti.in](mailto:support@zenyukti.in) |
 
 ---
 
