@@ -1,10 +1,10 @@
 # Contributing to SkillSwap
 
-First off, thank you for considering contributing to SkillSwap! 🎉
+First off, thank you for considering contributing to SkillSwap!
 
 SkillSwap is built by **Team ZenYukti** with the philosophy of *"Learn. Build. Share."* — we believe in growing together as a community.
 
-## 📋 Table of Contents
+## Table of Contents
 
 - [Code of Conduct](#code-of-conduct)
 - [How Can I Contribute?](#how-can-i-contribute)
@@ -16,7 +16,7 @@ SkillSwap is built by **Team ZenYukti** with the philosophy of *"Learn. Build. S
 
 ---
 
-## 📜 Code of Conduct
+## Code of Conduct
 
 This project follows the ZenYukti organization's Code of Conduct. Please refer to our organization's [.github repository](https://github.com/ZenYukti/.github) for the complete guidelines.
 
@@ -24,9 +24,9 @@ This project follows the ZenYukti organization's Code of Conduct. Please refer t
 
 ---
 
-## 🤝 How Can I Contribute?
+## How Can I Contribute?
 
-### 🐛 Reporting Bugs
+### Reporting Bugs
 
 Before creating a bug report, please check existing issues. When creating a report, include:
 
@@ -36,7 +36,7 @@ Before creating a bug report, please check existing issues. When creating a repo
 - **Screenshots** if applicable
 - **Environment details** (browser, OS, Node version)
 
-### 💡 Suggesting Features
+### Suggesting Features
 
 We love feature ideas! Please:
 
@@ -45,7 +45,7 @@ We love feature ideas! Please:
 - Describe how it benefits users
 - Consider implementation complexity
 
-### 🔧 Code Contributions
+### Code Contributions
 
 1. **Good first issues** - Look for issues labeled `good first issue`
 2. **Bug fixes** - Help us squash bugs
@@ -53,9 +53,14 @@ We love feature ideas! Please:
 4. **Documentation** - Improve docs and comments
 5. **Tests** - Add test coverage
 
+### Communication Channel (`primary`)
+All project-related communications are directed through the [ZenYukti Server](https://go.zenyukti.in/discord)
+For bug reports, feature requests, development discussions, deployment assistance, and community support, please join our Discord Server.
+
+
 ---
 
-## 🛠 Development Setup
+## Development Setup
 
 ### Prerequisites
 
@@ -93,7 +98,7 @@ npm run dev
 
 ---
 
-## 📝 Coding Standards
+## Coding Standards
 
 ### JavaScript/React
 
@@ -142,7 +147,7 @@ export default function MyComponent({ title }) {
 
 ---
 
-## 💬 Commit Messages
+## Commit Messages
 
 We follow [Conventional Commits](https://www.conventionalcommits.org/):
 
@@ -179,7 +184,7 @@ refactor: simplify authentication middleware
 
 ---
 
-## 🔄 Pull Request Process
+## Pull Request Process
 
 ### Before Submitting
 
@@ -225,23 +230,26 @@ Closes #
 1. A maintainer will review your PR
 2. Address any requested changes
 3. Once approved, your PR will be merged
-4. Celebrate! 🎉
+
+```
+Note: Kindly don't tag the project admin repeatedly, as they might be busy. That's said, join to the communication channel on [discord](https://go.zenyukti.in/discord) and discuss there.
+```
 
 ---
 
-## ❓ Getting Help
+## Getting Help
 
 Need help? Reach out to us:
 
 | Channel | Link |
 |---------|------|
-| 💬 **Discord** | [go.zenyukti.in/discord](https://go.zenyukti.in/discord) |
-| 📧 **Email** | [info@zenyukti.in](mailto:info@zenyukti.in) |
-| 🐛 **Issues** | [GitHub Issues](https://github.com/ZenYukti/SkillSwap/issues) |
+| **Discord** | [go.zenyukti.in/discord](https://go.zenyukti.in/discord) |
+| **Email** | [info@zenyukti.in](mailto:info@zenyukti.in) |
+| **Issues** | [GitHub Issues](https://github.com/ZenYukti/SkillSwap/issues) |
 
 ---
 
-## 🙏 Thank You!
+## Thank You!
 
 Every contribution matters, no matter how small. Thank you for helping make SkillSwap better!
 
